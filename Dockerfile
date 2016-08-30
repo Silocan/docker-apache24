@@ -15,9 +15,8 @@ RUN apt-get -y install php5-mysqlnd php5-curl php5-gd php-pear php5-imagick php5
 VOLUME /var/www/html
 VOLUME /etc/apache2/sites-enabled
 
-#
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf 
 COPY conf/template.conf /tmp
 COPY run.sh /tmp
-#
+
 CMD /bin/sh /tmp/run.sh
