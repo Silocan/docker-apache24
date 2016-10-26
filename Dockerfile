@@ -11,6 +11,7 @@ RUN apt-get -y install wget nano;
 RUN apt-get -y install apache2;
 RUN apt-get -y install php5 libapache2-mod-php5;
 RUN apt-get -y install php5-mysqlnd php5-curl php5-gd php-pear php5-imagick php5-imap php5-mcrypt php5-xmlrpc php5-xsl;
+RUN a2enmod rewrite;
 
 VOLUME /var/www/html
 VOLUME /etc/apache2/sites-enabled
