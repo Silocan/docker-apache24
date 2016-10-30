@@ -10,7 +10,7 @@ RUN apt-get update && apt-get -y upgrade;
 RUN apt-get -y install wget nano;
 RUN apt-get -y install apache2;
 RUN apt-get -y install php5 libapache2-mod-php5;
-RUN apt-get -y install php5-mysqlnd php5-curl php5-gd php-pear php5-imagick php5-imap php5-mcrypt php5-xmlrpc php5-xsl;
+RUN apt-get -y install php5-mysqlnd php5-curl php5-gd php-pear php5-imagick php5-imap php5-mcrypt php5-xmlrpc php5-xsl php5-intl;
 RUN a2enmod rewrite;
 
 VOLUME /var/www/html
